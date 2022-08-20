@@ -6,7 +6,7 @@
 #ifndef __WEB_H__
 #define __WEB_H__
 
-#include "dbg.h"
+#include "include/dbg.h"
 #ifdef ESP8266
     #include <ESP8266WebServer.h>
     #include <ESP8266HTTPUpdateServer.h>

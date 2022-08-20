@@ -32,9 +32,14 @@
 #define DEF_DEVICE_NAME         "AHOY-DTU"
 
 // default pinout
-#define DEF_RF24_CS_PIN         15
-#define DEF_RF24_CE_PIN         2
-#define DEF_RF24_IRQ_PIN        0
+//#define DEF_RF24_CS_PIN         15
+//#define DEF_RF24_CE_PIN         2
+//#define DEF_RF24_IRQ_PIN        0
+
+#define DEF_RF24_CS_PIN         16  //D0 = GPIO16
+#define DEF_RF24_CE_PIN         5   //D1 = GPIO5
+#define DEF_RF24_IRQ_PIN        4   //D2 = GPIO4
+
 
 // default NRF24 power, possible values (0 - 3)
 #define DEF_AMPLIFIERPOWER      2

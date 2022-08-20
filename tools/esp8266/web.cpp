@@ -72,7 +72,8 @@ void web::showIndex(void) {
     html.replace(F("{VERSION}"), mVersion);
     html.replace(F("{TS}"), String(mConfig->sendInterval) + " ");
     html.replace(F("{JS_TS}"), String(mConfig->sendInterval * 1000));
-    html.replace(F("{BUILD}"), String(AUTO_GIT_HASH));
+//    html.replace(F("{BUILD}"), String(AUTO_GIT_HASH));    
+    html.replace(F("{BUILD}"), String("RH"));
     mWeb->send(200, "text/html", html);
 }
 
